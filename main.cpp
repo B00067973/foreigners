@@ -31,12 +31,21 @@ public:
         height = h;
 
     }
+    
+    void setRadius(int r)
+    {
+        
+        radius = r;
+        
+    }
 
 protected:
 
     int width;
 
     int height;
+    
+    int radius;
 
 };
 
@@ -78,6 +87,19 @@ public:
 
 };
 
+// class that calc area of a circle
+class Circle: public Shape
+
+{
+
+public:
+
+    int getArea()
+
+    {
+        return 3.14*radius*radius;
+    }
+
 
 
 
@@ -102,6 +124,12 @@ int main()
 
     cout << "Area of Rectangle: " << Rec.getArea() << endl;
 
+    
+    Circle Rad;
+    
+    Rad.setRadius(4);
+
+    cout << "Area of Circle: " << Rad.getArea() << endl;
 
     return 0;
 
