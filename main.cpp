@@ -31,12 +31,12 @@ public:
         height = h;
 
     }
-    
+
     void setRadius(int r)
     {
-        
+
         radius = r;
-        
+
     }
 
 protected:
@@ -44,7 +44,7 @@ protected:
     int width;
 
     int height;
-    
+
     int radius;
 
 };
@@ -100,7 +100,7 @@ public:
         return 3.14*radius*radius;
     }
 
-
+};
 
 
 int main()
@@ -124,12 +124,14 @@ int main()
 
     cout << "Area of Rectangle: " << Rec.getArea() << endl;
 
-    
+
     Circle Rad;
-    
+
     Rad.setRadius(4);
 
     cout << "Area of Circle: " << Rad.getArea() << endl;
+
+
 
     return 0;
 
