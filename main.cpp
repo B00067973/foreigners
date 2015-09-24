@@ -31,12 +31,12 @@ public:
         height = h;
 
     }
-    
+
     void setRadius(int r)
     {
-        
+
         radius = r;
-        
+
     }
 
 protected:
@@ -44,7 +44,7 @@ protected:
     int width;
 
     int height;
-    
+
     int radius;
 
 };
@@ -97,15 +97,18 @@ public:
     int getArea()
 
     {
-        return 3.14*radius*radius;
+        return 3.14*(radius*radius); //peter put brackets
     }
-
+};                          //fixed - peter
 
 
 
 int main()
 
 {
+
+    int total_areas;
+
     Triangle Tri;
 
     Tri.setWidth(5);
@@ -124,12 +127,16 @@ int main()
 
     cout << "Area of Rectangle: " << Rec.getArea() << endl;
 
-    
+
     Circle Rad;
-    
+
     Rad.setRadius(4);
 
     cout << "Area of Circle: " << Rad.getArea() << endl;
+
+    total_areas = Tri.getArea()+Rec.getArea()+Rad.getArea();
+
+    cout << "Total area of shapes " << total_areas <<endl;
 
     return 0;
 
