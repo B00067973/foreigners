@@ -99,8 +99,13 @@ public:
     {
         return 3.14*(radius*radius); //peter put brackets
     }
+<<<<<<< HEAD
 };                          //fixed - peter
 
+=======
+
+};
+>>>>>>> 9551a6766d9c11f8e96969920218d8a7b2c9d13b
 
 
 int main()
@@ -134,9 +139,13 @@ int main()
 
     cout << "Area of Circle: " << Rad.getArea() << endl;
 
+<<<<<<< HEAD
     total_areas = Tri.getArea()+Rec.getArea()+Rad.getArea();
 
     cout << "Total area of shapes " << total_areas <<endl;
+=======
+
+>>>>>>> 9551a6766d9c11f8e96969920218d8a7b2c9d13b
 
     return 0;
 
