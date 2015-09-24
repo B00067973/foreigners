@@ -69,7 +69,7 @@ public:
 
 
 
-// class that calc area of a rectangle
+// class that calc area of a rectangle sajad
 class Rectangle: public Shape
 
 {
